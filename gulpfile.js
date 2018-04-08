@@ -41,6 +41,8 @@ var rename = require("gulp-rename");
 //dependency injection npm install --save-dev gulp-plumber
 var plumber = require('gulp-plumber');
 
+var coffee = require('gulp-coffee');
+
 //checking gulp is running
 gulp.task('Welcome',function(){
     return gulpUtil.log("Welcome gulp is running");
@@ -51,6 +53,7 @@ gulp.task('Welcome',function(){
 gulp.task('clone',function(){
     gulp.src(['DevelopmentCode/**/*',,"!"+DevelopmentCode+'/**/*.scss',"!"+DevelopmentCode+'/**/*.css' ,"!"+DevelopmentCode+'/**/*.js',"!"+DevelopmentCode+'/**/*.css',"!"+DevelopmentCode+'/**/images/*.*'])
         .pipe(plumber())
+        .pipe(coffee())
         .pipe(gulp.dest('ProductionCode/'));
         
 });
