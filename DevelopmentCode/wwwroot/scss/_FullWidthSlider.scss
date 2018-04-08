@@ -1,14 +1,26 @@
 ﻿
 
-#mainHomeCarousel 
-{
-    
+#HomeCarousel {
+    /*background: url(../images/slide1.jpg) no-repeat center center fixed;
     display: table;
-    height: 60%;
+    height: 100%;
     position: relative;
     width: 100%;
-    background-size: cover;
+    background-size: cover;*/
+    .item {
+       
+    }
 }
+
+img {
+    height: auto;
+    max-height: 655px;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
 /*
 
 html,

@@ -34,12 +34,19 @@ footer {
       padding: 8px;
       color: white; }
 
-#mainHomeCarousel {
-  display: table;
-  height: 60%;
-  position: relative;
+#HomeCarousel {
+  /*background: url(../images/slide1.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;*/ }
+
+img {
+  height: auto;
+  max-height: 655px;
   width: 100%;
-  background-size: cover; }
+  max-width: 100%; }
 
 /*
 
