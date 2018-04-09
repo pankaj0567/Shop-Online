@@ -1,6 +1,9 @@
 .navbar-inverse {
   opacity: 0.5; }
 
+#menu ul li:last-child {
+  margin-right: 15px; }
+
 footer {
   width: 100%;
   height: 500px; }
@@ -76,3 +79,64 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }*/
+#BannerSection .bannerSectionImages, #BannerSection .bannerSectionImages:hover img, #BannerSection .bannerSectionImages img {
+  width: 390;
+  height: 235px; }
+
+#BannerSection {
+  margin: 70px auto; }
+  #BannerSection .bannerSectionImages {
+    overflow: hidden;
+    position: relative; }
+    #BannerSection .bannerSectionImages:hover img {
+      transform: scale(1.5, 1.5);
+      transition: all 0.5s ease; }
+    #BannerSection .bannerSectionImages img {
+      max-width: 100%;
+      transition: all 0.5s ease; }
+
+#homeProduct {
+  margin: 70px auto; }
+  #homeProduct .homeProductImages {
+    position: relative;
+    overflow: hidden; }
+    #homeProduct .homeProductImages > img {
+      max-width: 100%; }
+    #homeProduct .homeProductImages .homeProductHoverEffect {
+      position: absolute;
+      background-color: black;
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      opacity: 0;
+      transition: all 0.5s ease;
+      text-align: center;
+      vertical-align: middle; }
+      #homeProduct .homeProductImages .homeProductHoverEffect a {
+        padding: 10px 10px 10px 0px;
+        background: #fff;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-family: "Myriad Pro"; }
+        #homeProduct .homeProductImages .homeProductHoverEffect a i {
+          padding-right: 5px; }
+      #homeProduct .homeProductImages .homeProductHoverEffect:hover {
+        opacity: 0.7;
+        transition: all 0.5s ease;
+        text-align: center;
+        padding-top: 120px;
+        box-sizing: border-box; }
+  #homeProduct .homeProductDetails {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%; }
+    #homeProduct .homeProductDetails a {
+      text-decoration: none; }
+    #homeProduct .homeProductDetails .fa-star {
+      color: yellow; }

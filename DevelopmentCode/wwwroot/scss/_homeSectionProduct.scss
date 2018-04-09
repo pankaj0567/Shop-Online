@@ -1,0 +1,74 @@
+﻿$fontfamily: 'Myriad Pro';
+
+#homeProduct {
+    margin: 70px auto;
+
+    .homeProductImages {
+        position: relative;
+        overflow: hidden;
+
+
+        & > img {
+            max-width: 100%;
+        }
+
+        .homeProductHoverEffect {
+            position: absolute;
+            background-color: black;
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: all 0.5s ease;
+            text-align: center;
+            vertical-align: middle;
+
+
+            a {
+                padding: 10px 10px 10px 0px;
+                background: #fff;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+                font-family: $fontfamily;
+
+                i {
+                    padding-right: 5px;
+                }
+            }
+
+            &:hover {
+                opacity: 0.7;
+                transition: all 0.5s ease;
+                text-align: center;
+                padding-top: 120px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+
+    .homeProductDetails {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 100%;
+        a{
+            text-decoration:none;
+        }
+
+        
+
+
+        .fa-star {
+            color: yellow;
+        }
+    }
+}
+
+
+

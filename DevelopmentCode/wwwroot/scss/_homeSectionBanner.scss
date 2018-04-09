@@ -1,0 +1,27 @@
+﻿%CustomHeightWidthBannerImage {
+    width: 390;
+    height: 235px;
+}
+
+
+#BannerSection {
+    margin: 70px auto;
+
+    .bannerSectionImages {
+        @extend %CustomHeightWidthBannerImage;
+        overflow: hidden;
+        position: relative;
+
+        &:hover img {
+            @extend %CustomHeightWidthBannerImage;
+            transform: scale(1.5,1.5);
+            transition: all 0.5s ease;
+        }
+
+        img {
+            @extend %CustomHeightWidthBannerImage;
+            max-width: 100%;
+            transition: all 0.5s ease;
+        }
+    }
+}

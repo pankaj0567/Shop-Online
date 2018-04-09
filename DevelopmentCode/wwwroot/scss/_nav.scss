@@ -1,3 +1,9 @@
 ﻿.navbar-inverse {
     opacity: 0.5;
 }
+#menu
+{
+    ul li:last-child{
+        margin-right:15px;
+    }
+}

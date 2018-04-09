@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../../wwwroot/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../../wwwroot/lib/jquery/dist/jquery.js"></script>
+    <link href="../../wwwroot/css/Style.css" rel="stylesheet" />
+    <script src="../../wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="../../wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="wwwroot/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="wwwroot/css/style.css" rel="stylesheet" />
+    <script src="../../wwwroot/lib/fontAwesome/fontawesome-all.js"></script>
+    <script src="../../wwwroot/lib/AngularJs/angular.js"></script>
+    <script src="../../wwwroot/AngularJs/app.js"></script>
+    <script src="../../wwwroot/AngularJs/controller.js"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+
+
+</head>
+<body ng-app="shopOnline">
+    <!-- product  -->
+   <div class="container" id="homeProduct" >
+       <div class="row" >
+           <div class="col-lg-3" ng-repeat="k in [1,2,3,4,5,6,7,8]" >
+               <a href="#">
+                   <div class="homeProductImages">
+                       <img src="../../wwwroot/images/Shop_Isle_{{k}}-300x300.jpg" />
+                       <div class="homeProductHoverEffect">
+                           <a href="#" ><i class="fa fa-cart-arrow-down"></i>  ADD TO CART</a>
+                       </div>
+                   </div>
+                   <div class="homeProductDetails">
+                       <a href="#"> BLUE & RED SHIRT</a><br />
+                       <i class="fa fa-star" ng-repeat="fontIcon in [1,2,3,4,5]"></i>
+                       <p><i class="fa fa-rupee-sign"></i> 235.00</p>
+                   </div>
+               </a>
+               
+           </div>      
+       </div>
+   </div>
+
+    <!-- End product -->
+</body>
+</html>
