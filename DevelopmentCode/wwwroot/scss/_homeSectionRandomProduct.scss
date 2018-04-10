@@ -1,18 +1,26 @@
 ﻿$fontfamily: 'Myriad Pro';
 
-#homeProduct {
-    margin: 70px auto;
 
-    .homeProductImages {
+
+#homeRandomProduct {
+    margin-top: 70px;
+
+    .homeRandomProductImages {
         position: relative;
         overflow: hidden;
+        opacity:0.6;
+        transition:all 1.5s ease;
+        &:hover{
+            opacity:1;
+            transition:all 1.5s ease;
+        }
 
 
         & > img {
             max-width: 100%;
         }
 
-        .homeProductHoverEffect {
+        .homeRandomProductHoverEffect {
             position: absolute;
             background-color: black;
             opacity: 0.6;
@@ -52,16 +60,17 @@
     }
 
 
-    .homeProductDetails {
+    .homeRandomProductDetails {
         margin-top: 10px;
         margin-bottom: 25px;
         text-align: center;
         width: 100%;
-        a{
-            text-decoration:none;
+
+        a {
+            text-decoration: none;
         }
 
-        
+
 
 
         .fa-star {
@@ -71,15 +80,3 @@
 }
 
 
-
-.btn-dark{
-    background-color:black;
-    color:white;
-    font-family:$fontfamily;
-    height:35px;
-    width:200px;
-    &:hover{
-        opacity:0.75;
-        color:white;
-    }
-}

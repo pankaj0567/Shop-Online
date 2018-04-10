@@ -1,7 +1,8 @@
 ﻿$fontfamily: 'Myriad Pro';
 
 #homeProduct {
-    margin: 70px auto;
+    margin-top: 70px;
+    margin-bottom:15px;
 
     .homeProductImages {
         position: relative;
@@ -78,6 +79,7 @@
     font-family:$fontfamily;
     height:35px;
     width:200px;
+    
     &:hover{
         opacity:0.75;
         color:white;

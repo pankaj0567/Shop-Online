@@ -3,17 +3,15 @@
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
 <!-- product  -->
-   <div class="container" id="homeProduct" >
+   <div class="container" id="homeRandomProduct" >
        <div class="row" >
-           <div class="col-lg-3" ng-repeat="k in [1,2,3,4,5,6,7,8]" >
+           <div class="col-lg-3" ng-repeat="k in [1,2,3,4]" >
                <a href="#">
-                   <div class="homeProductImages">
+                   <div class="homeRandomProductImages">
                        <img src="~/images/Shop_Isle_{{k}}-300x300.jpg" />
-                       <div class="homeProductHoverEffect">
-                           <a href="#" ><i class="fa fa-cart-arrow-down"></i>  ADD TO CART</a>
-                       </div>
+                       
                    </div>
-                   <div class="homeProductDetails">
+                   <div class="homeRandomProductDetails">
                        <a href="#"> BLUE & RED SHIRT</a><br />
                        <i class="fa fa-star" ng-repeat="fontIcon in [1,2,3,4,5]"></i>
                        <p><i class="fa fa-rupee-sign"></i> 235.00</p>
@@ -26,11 +24,3 @@
 
     <!-- End product -->
 
-
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-offset-5 col-lg-12">
-				<a href="#" class="btn btn-dark" >SEE ALL PRODUCTS</a>
-			</div>
-		</div>
-	</div>
