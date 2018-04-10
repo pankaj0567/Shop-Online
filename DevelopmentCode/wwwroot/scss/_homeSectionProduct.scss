@@ -72,3 +72,14 @@
 
 
 
+.btn-dark{
+    background-color:black;
+    color:white;
+    font-family:$fontfamily;
+    height:35px;
+    width:200px;
+    &:hover{
+        opacity:0.75;
+        color:white;
+    }
+}

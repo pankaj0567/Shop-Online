@@ -1,5 +1,5 @@
 ﻿%CustomHeightWidthBannerImage {
-    width: 390;
+    width: 390px;
     height: 235px;
 }
 
@@ -11,17 +11,20 @@
         @extend %CustomHeightWidthBannerImage;
         overflow: hidden;
         position: relative;
+        box-sizing: border-box;
 
         &:hover img {
             @extend %CustomHeightWidthBannerImage;
             transform: scale(1.5,1.5);
             transition: all 0.5s ease;
+            box-sizing: border-box;
         }
 
         img {
             @extend %CustomHeightWidthBannerImage;
             max-width: 100%;
             transition: all 0.5s ease;
+            box-sizing: border-box;
         }
     }
 }

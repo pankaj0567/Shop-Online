@@ -68,7 +68,7 @@ gulp.task('sass',function(){
 gulp.task('browser-sync',function(){
     browserSync.init({
         server : {
-            baseDir : DevelopmentCode+"Views/Home/"
+            baseDir : DevelopmentCode
         },
     });
 });

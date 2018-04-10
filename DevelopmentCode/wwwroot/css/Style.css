@@ -80,20 +80,23 @@ body {
     -o-background-size: cover;
 }*/
 #BannerSection .bannerSectionImages, #BannerSection .bannerSectionImages:hover img, #BannerSection .bannerSectionImages img {
-  width: 390;
+  width: 390px;
   height: 235px; }
 
 #BannerSection {
   margin: 70px auto; }
   #BannerSection .bannerSectionImages {
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     #BannerSection .bannerSectionImages:hover img {
       transform: scale(1.5, 1.5);
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      box-sizing: border-box; }
     #BannerSection .bannerSectionImages img {
       max-width: 100%;
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      box-sizing: border-box; }
 
 #homeProduct {
   margin: 70px auto; }
@@ -140,3 +143,37 @@ body {
       text-decoration: none; }
     #homeProduct .homeProductDetails .fa-star {
       color: yellow; }
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  font-family: "Myriad Pro";
+  height: 35px;
+  width: 200px; }
+  .btn-dark:hover {
+    opacity: 0.75;
+    color: white; }
+
+#BackVideo {
+  width: 100%;
+  height: 315px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 70px auto; }
+  #BackVideo .BackVideoText {
+    z-index: 99;
+    position: absolute;
+    left: 27%;
+    top: 110px;
+    bottom: 50%; }
+    #BackVideo .BackVideoText h1 {
+      text-align: center;
+      color: white; }
+  #BackVideo video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; }
