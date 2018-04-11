@@ -63,6 +63,14 @@ gulp.task('sass',function(){
         
 });
 
+//creating a task for minify images
+gulp.task('imagemin',function(){
+  return gulp.src(DevelopmentCode+'wwwroot/images/*.*')
+        .pipe(plumber())
+        .pipe(imagemin())
+        .pipe(gulp.dest(ProductionCode+'wwwroot/images/'));
+});
+
 
 //creating liveload with the help of browser-sync
 gulp.task('browser-sync',function(){
@@ -74,13 +82,16 @@ gulp.task('browser-sync',function(){
 });
 
 gulp.task('watch',['browser-sync' , 'sass'], function () {
-    gulp.watch(DevelopmentCode+'/**/*/scss/*.scss', ['sass']);
+    
+
+   gulp.watch(DevelopmentCode+'/**/*/scss/*.scss', ['sass']);
     //gulp.watch(DevelopmentCode+'js/*.js', ['concatjs']);
-    // gulp.watch(DevelopmentCode+'images/**/*', ['imagemin']);
+    gulp.watch(DevelopmentCode+'wwwroot/images/*.*', ['imagemin']);
     // gulp.watch(DevelopmentCode+'/**/css/*.css', ['concatcss']);
     // gulp.watch(DevelopmentCode+'**/*.html', ['minifyhtml']);  
     // // Reloads the browser whenever HTML or JS files change
-    gulp.watch(DevelopmentCode+'**/*.*', browserSync.reload);
+   
+   gulp.watch(DevelopmentCode+'**/*.*', browserSync.reload);
 });
 
 //default task
